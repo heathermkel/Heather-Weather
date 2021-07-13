@@ -1,13 +1,131 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  background-color: #fff;
+}
+
+li {
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #000;
+}
+
+p {
+  list-style: none;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  color: #000;
+}
+
+button {
+  background: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000;
+  border-radius: 4px 4px 4px 4px;
+}
+
+#wrap {
+  width: 50%;
+  margin: 10px auto;
+  background: #fff;
+  overflow: hidden;
+  padding: 5px auto;
+  border-color: 8px #000;
+  border-radius: 7px 7px 7px 7px;
+}
+
+.outline {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+}
+
+.col-sm-8 {
+  margin: 20px auto;
+}
+
+.col-4 {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10;
+}
+
+.container {
+  display: block;
+  max-width: 900px;
+  text-align: center;
+  padding: 20px 20px;
+  width: 100%;
+  background-color: #78ccbb;
+  border-radius: 7px 7px 7px 7px;
+}
+
+table.table {
+  font-family: "Courier New", Courier, monospace;
+  border: 1px solid #14a488;
+  background-color: #eeeeee;
+  width: 100%;
+  text-align: center;
+}
+
+table.table td,
+table.table th {
+  border: 1px solid #ffffff;
+  border-radius: 7px 7px 7px 7px;
+  padding: 2px 2px;
+}
+table.table tbody td {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table.table thead {
+  background: #14a488;
+  background: linear-gradient(to bottom, #72e2cc 0%, #2bad94 66%, #14a488 100%);
+}
+table.table thead th {
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 7px 7px 7px 7px;
+}
+
+.weather-forecast {
+  margin: 18px 18px 18px 18px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 18px;
+}
+
+.weather-forecast-temp {
+  font-size: 16px;
+}
+
+.temp-max {
+  font-weight: 700;
+}
+
+.temp-min {
+  font-weight: 400;
+}
+
+.built {
+  text-align: center;
+  font-size: 12px;
 }
