@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
        <h1> Hello World!</h1>
        <Weather />
-       
+
 <html lang="en">
 
 <head>
@@ -68,12 +68,12 @@ function App() {
                         </span>
                             <br/>
                             Wind: <span id="wind"></span><br />
-                            Humidity:<span id="humidity"></sapn>
+                            Humidity:<span id="humidity"></span>
                         </p>
                     </div>
                     
                 </div>
-                <div class ="weather-forecast" id= forecast></div>
+                <div class ="weather-forecast" id= "forecast"></div>
                    
             </div>
             </div>
@@ -89,12 +89,11 @@ function App() {
 
     <script src="src/script.js"></script>
 </body>
-
-</html>
        
       </header>
     </div>
   );
 }
 
+</html>
 export default App;
