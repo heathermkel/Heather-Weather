@@ -4,8 +4,40 @@ import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 
-export default function Weather () {
-    
+export default function Weather (props) {
+    const [weatherData, setWeatherData] = useState({ ready: false});
+    const [city, setCity] = useState(props.deafaultCity);
+
+function handleResponse (response) {
+    setWeatherData({
+        ready: true,
+        coordinates: response.data.coord,
+      temperature: response.data.main.temp,
+      humidity: response.data.main.humidity,
+      date: new Date(response.data.dt * 1000),
+      description: response.data.weather[0].description,
+      icon: response.data.weather[0].icon,
+      wind: response.data.wind.speed,
+      city: response.data.name,
+    });
+    }
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    search();
+}
+
+function handleCityChange (event) {
+    setCity (even.target.vale);
+}
+
+function search() {
+    const apiKey="662503186868ce09efd405e08768d721";
+    let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    axios.get(apiURL).then(handleResponse);
+}
+
     if (weatherDate.ready) {
     return (
       <div className="Weather">
@@ -37,4 +69,3 @@ export default function Weather () {
     search();
     return "Loading...";
   }
-}
