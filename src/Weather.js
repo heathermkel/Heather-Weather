@@ -40,7 +40,7 @@ function search() {
 
     if (weatherData.ready) {
     
-    return ( 
+      return ( 
       <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
@@ -66,7 +66,8 @@ function search() {
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
-     } else {
+} 
+     else {
     search();
     return "Loading...";
   }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import WeatherInfo from "./WeatherInfo";
-import Forecase from "./WEatherForecase";
+import WeatherInfo from "./WeatherInfo.js";
+import Forecase from "./WeatherForecase.js";
 import axios from"axios";
 import "./App.css"
 
