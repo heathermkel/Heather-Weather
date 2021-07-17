@@ -3,13 +3,19 @@ import Weather from "./Weather";
 
 import "./App.css";
 
+let api = {
+  key:"662503186868ce09efd405e08768d721",
+  base:"http://api.openweathermap.org/data/2.5/"
+}
+
 function App() {
   return (
   <div className="App">
-    <header className="App-header">
-  <h1>Hello from React</h1>
+      <div className="container">
+        <Weather defaultCity="Austin" />
+        
   <Weather />
-  </header>
+  
 
    <footer> 
       This page was built by 
@@ -19,6 +25,7 @@ function App() {
       <a href="https://github.com/heathermkel/Heather-Weather" target="_blank">  Git Hub</a>
      
       </footer>
+  </div>
   </div>
   );
 }
