@@ -1,5 +1,102 @@
 .App {
+  border: 1px solid #afbdba;
+  padding: 5px;
+  margin: 10px auto;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+body {
   text-align: center;
+
+  line-height: 48px;
+  margin: 50px;
+  border-color: orange;
+}
+
+h1 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 32px;
+  margin: 0;
+}
+
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  color: #afbdba;
+  font-size: 16px;
+  font-weight: 100;
+  height: 19px;
+  line-height: 1;
+  list-style: none;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.weather-icon {
+  height: 64px;
+  width: 64px;
+  margin-right: 10px;
+}
+.forecast {
+  border: 1px solid #000000;
+  padding: 7px;
+  margin: 10px auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
+.temperature {
+  position: relative;
+  margin-left: 40px;
+  color: rgb(33, 33, 33);
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.units {
+  top: -19px;
+}
+
+.units .active {
+  cursor: default;
+  color: #0dbd97;
+}
+.units .active:hover {
+  text-decoration: none;
+}
+
+.search-form {
+  margin-bottom: 20px;
+  color: orange;
+}
+
+button:hover {
+  cursor: pointer;
+  background: orange;
+}
+
+row {
+  text-align: center;
+}
+
+col {
+  text-align: center;
+}
+
+.card-title {
+  font-size: smaller;
+}
+.App footer {
+  font-size: x-small;
 }
 
 .App-logo {

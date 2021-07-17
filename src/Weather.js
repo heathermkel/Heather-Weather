@@ -1,7 +1,7 @@
 import React,  { useState } from "react";
 import axios from 'axios';
-import WeatherInfo from "./WeatherInfo";
-import WeatherForecast from "./WeatherForecast";
+import WeatherInfo from "./WeatherInfo.js";
+import WeatherForecast from "./WeatherForecast.js";
 import "./Weather.css";
 
 export default function Weather (props) {
@@ -38,8 +38,9 @@ function search() {
     axios.get(apiURL).then(handleResponse);
 }
 
-    if (weatherDate.ready) {
-    return (
+    if (weatherData.ready) {
+    
+    return ( 
       <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
@@ -65,7 +66,7 @@ function search() {
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
-  } else {
+     } else {
     search();
     return "Loading...";
   }
