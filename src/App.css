@@ -1,17 +1,17 @@
 .App {
   border: 1px solid #afbdba;
   padding: 5px;
-  margin: 10px auto;
+  margin: 20px auto;
   border-radius: 10px;
-  max-width: 500px;
+  max-width: 550px;
 }
 
 body {
   text-align: center;
 
-  line-height: 48px;
-  margin: 50px;
-  border-color: orange;
+  line-height: 45px;
+  margin: 30px;
+  border-color: rgb(80, 150, 135);
 }
 
 h1 {

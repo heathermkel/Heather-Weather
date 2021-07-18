@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo.js";
-import Forecase from "./WeatherForecase.js";
+import Forecast from "./WeatherForecast.js";
 import axios from"axios";
 import "./App.css"
 
 export default function Weather (props) {
-    const [weaterDate, setWeatherDate] = useState({ ready: false});
+    const [weatherData, setWeatherData] = useState({ ready: false});
     const [city, setCity] = useState(props.defaultCity);
 
     function handleResponse(response) {

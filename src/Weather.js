@@ -6,11 +6,11 @@ import "./Weather.css";
 
 export default function Weather (props) {
     const [weatherData, setWeatherData] = useState({ ready: false});
-    const [city, setCity] = useState(props.deafaultCity);
+    const [city, setCity] = useState(props.defaultCity);
 
 function handleResponse (response) {
     setWeatherData({
-        ready: true,
+        ready: false,
         coordinates: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
@@ -29,13 +29,13 @@ function handleSubmit(event) {
 }
 
 function handleCityChange (event) {
-    setCity (event.target.vale);
+    setCity(event.target.value);
 }
 
 function search() {
     const apiKey="662503186868ce09efd405e08768d721";
-    let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-    axios.get(apiURL).then(handleResponse);
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    axios.get(apiUrl).then(handleResponse);
 }
 
     if (weatherData.ready) {

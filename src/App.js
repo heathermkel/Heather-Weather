@@ -1,10 +1,13 @@
 import React from "react";
 import Weather from "./Weather";
 import "./App.css";
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-      <Weather />
+      <div className="container">
+        <Weather defaultCity="Austin" />
+
       <footer>
         This page was built by
         <a href="https://www.linkedin.com/in/heatherk3lly/" target="_blank">
@@ -21,6 +24,7 @@ function App() {
         </a>
       </footer>
     </div>
+    </div>
   );
 }
-export default App;
+
