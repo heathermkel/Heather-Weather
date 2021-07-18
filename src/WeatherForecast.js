@@ -8,12 +8,12 @@ export default function WeatherForecast (props){
     let [forecast, setForecast] = useState(null);
 
     useEffect(() => {
-        setLoaded(false);
+        setLoad(false);
     }, [props.coordinates]);
 
     function handleResponse(response) {
         setForecast(response.data.daily);
-        setLoaded (true);
+        setLoad (true);
 
 }
 
@@ -44,8 +44,5 @@ function load() {
         </div>
       </div>
     );
-  } else {
-    load();
-
-    return 
-    null;
+  } 
+}

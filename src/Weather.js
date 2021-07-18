@@ -20,7 +20,7 @@ function handleResponse (response) {
       wind: response.data.wind.speed,
       city: response.data.name,
     });
-    }
+    
 }
 
 function handleSubmit(event) {
@@ -29,7 +29,7 @@ function handleSubmit(event) {
 }
 
 function handleCityChange (event) {
-    setCity (even.target.vale);
+    setCity (event.target.vale);
 }
 
 function search() {
@@ -40,7 +40,7 @@ function search() {
 
     if (weatherData.ready) {
     
-      return ( 
+      return (
       <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
@@ -62,12 +62,15 @@ function search() {
             </div>
           </div>
         </form>
+        
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
-    );
-} 
+      );
+    
+    } 
      else {
     search();
     return "Loading...";
   }
+}
