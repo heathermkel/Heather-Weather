@@ -76,12 +76,12 @@ li:first-letter {
 
 .search-form {
   margin-bottom: 20px;
-  color: orange;
+  color: #afbdba;
 }
 
 button:hover {
   cursor: pointer;
-  background: orange;
+  background: #afbdba;
 }
 
 row {
