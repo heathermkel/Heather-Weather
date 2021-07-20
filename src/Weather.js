@@ -3,7 +3,6 @@ import axios from 'axios';
 import WeatherInfo from "./WeatherInfo.js";
 import WeatherForecast from "./WeatherForecast.js";
 import "./Weather.css";
-import WeatherTemperature from "./WeatherTemperature.js";
 
 export default function Weather (props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
