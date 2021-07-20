@@ -3,6 +3,7 @@ import axios from 'axios';
 import WeatherInfo from "./WeatherInfo.js";
 import WeatherForecast from "./WeatherForecast.js";
 import "./Weather.css";
+import WeatherTemperature from "./WeatherTemperature.js";
 
 export default function Weather (props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
@@ -22,20 +23,20 @@ function handleResponse (response) {
     });
     
   }
-    function search() {
-        const apiKey="616cd13531829d29dc851eac29d80546";
-        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-        axios.get(apiUrl).then(handleResponse);
-    }
-
-function handleSubmit(event) {
+  
+  function handleSubmit(event) {
     event.preventDefault();
     search();
-}
-
-function handleCityChange (event) {
+  }
+  
+  function handleCityChange (event) {
     setCity(event.target.value);
-}
+  }
+  function search() {
+      const apiKey="616cd13531829d29dc851eac29d80546";
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+      axios.get(apiUrl).then(handleResponse);
+  }
 
 
     if (weatherData.ready) {
@@ -64,7 +65,6 @@ function handleCityChange (event) {
         </form>
         
         <WeatherInfo data={weatherData} />
-        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
       );
     
