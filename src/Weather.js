@@ -21,7 +21,12 @@ function handleResponse (response) {
       city: response.data.name,
     });
     
-}
+  }
+    function search() {
+        const apiKey="616cd13531829d29dc851eac29d80546";
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+        axios.get(apiUrl).then(handleResponse);
+    }
 
 function handleSubmit(event) {
     event.preventDefault();
@@ -32,11 +37,6 @@ function handleCityChange (event) {
     setCity(event.target.value);
 }
 
-function search() {
-    const apiKey="616cd13531829d29dc851eac29d80546";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-    axios.get(apiUrl).then(handleResponse);
-}
 
     if (weatherData.ready) {
     
