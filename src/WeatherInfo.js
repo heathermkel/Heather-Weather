@@ -1,5 +1,5 @@
 import React from "react";
-import FormattedDate from "./DateFormation";
+import DateFormation from "./DateFormation";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 
@@ -14,7 +14,7 @@ export default function WeatherInfo(props) {
 
       <ul>
         <li>
-           <FormattedDate date={props.data.date} />
+           <DateFormation date={props.data.date} />
         </li>
         <li className="text-capitalize">{props.data.description}</li>
       </ul>
