@@ -75,7 +75,7 @@ li:first-letter {
 }
 
 .search-form {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #afbdba;
 }
 
@@ -122,7 +122,7 @@ col {
 }
 
 .App-link {
-  color: #61dafb;
+  color: #268b7b;
 }
 
 @keyframes App-logo-spin {

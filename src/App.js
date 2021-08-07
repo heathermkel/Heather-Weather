@@ -7,24 +7,23 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Weather defaultCity="Austin" />
-
-    </div>
-    </div>
-  );
-}
       <footer>
         This page was built by
-        <a href="https://www.linkedin.com/in/heatherk3lly/" target="_blank">
+        <a href="https://www.linkedin.com/in/heatherk3lly/" 
+        target="_blank" >
           {" "}
           Heather Kelly.{" "}
         </a>
         Open source code:
         <a
           href="https://github.com/heathermkel/Heather-Weather"
-          target="_blank"
-        >
+          target="_blank">
           {" "}
           Git Hub
         </a>
       </footer>
+    </div>
+    </div>
+  );
+}
 
