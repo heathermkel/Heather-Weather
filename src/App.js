@@ -8,6 +8,10 @@ export default function App() {
       <div className="container">
         <Weather defaultCity="Austin" />
 
+    </div>
+    </div>
+  );
+}
       <footer>
         This page was built by
         <a href="https://www.linkedin.com/in/heatherk3lly/" target="_blank">
@@ -23,8 +27,4 @@ export default function App() {
           Git Hub
         </a>
       </footer>
-    </div>
-    </div>
-  );
-}
 
